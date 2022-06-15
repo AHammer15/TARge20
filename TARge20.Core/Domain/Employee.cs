@@ -8,6 +8,7 @@ namespace TARge20.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
+
         public string Name { get; set; }
         public int Age { get; set; }
         public string Experience { get; set; }
