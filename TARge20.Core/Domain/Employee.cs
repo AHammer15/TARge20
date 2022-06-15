@@ -8,8 +8,10 @@ namespace TARge20.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Experience { get; set; }
+        public string Specialty { get; set; }
 
         /// ESIMENE HINDELINE HARJUTUS
         /// Nõuded ja tegevus:
