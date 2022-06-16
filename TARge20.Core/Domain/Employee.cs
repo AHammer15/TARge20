@@ -10,7 +10,7 @@ namespace TARge20.Core.Domain
         public Guid Id { get; set; }
         public ICollection<Access> AccessId { get; set; }
         public ICollection<BranchOffice> BranchOfficeId { get; set; }
-        public string Name { get; set; }
+        public string List { get; set; }
         public int Age { get; set; }
         public string Experience { get; set; }
         public string Specialty { get; set; }
