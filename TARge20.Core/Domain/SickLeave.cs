@@ -8,6 +8,7 @@ namespace TARge20.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
+        public ICollection<Employee> EmployeeId { get; set; }
         public string Symptoms { get; set; }
         public string Illness { get; set; }
     }

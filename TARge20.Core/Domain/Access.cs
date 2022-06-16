@@ -4,12 +4,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TARge20.Core.Domain
 {
-    public class Vacation
+    public class Access
     {
         [Key]
         public Guid Id { get; set; }
-        public ICollection<Employee> EmployeeId { get; set; }
-        public DateTime Begin { get; set; }
-        public DateTime End { get; set; }
+        public bool ServerAccess { get; set; }
+        public bool ComputerAccess { get; set; }
+        public bool SoftwareAccess { get; set; }
+
     }
 }

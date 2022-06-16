@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TARge20.Core.Domain
 {
-    public class Vacation
+    public class BranchOffice
     {
         [Key]
         public Guid Id { get; set; }
-        public ICollection<Employee> EmployeeId { get; set; }
-        public DateTime Begin { get; set; }
-        public DateTime End { get; set; }
+        public string Employees { get; set; }
+        public string Office { get; set; }
+        public string Computers { get; set; }
     }
 }

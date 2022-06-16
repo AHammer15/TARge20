@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TARge20.Core.Domain
 {
-    class Check
+    public class Check
     {
         [Key]
         public Guid Id { get; set; }

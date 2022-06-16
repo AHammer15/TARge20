@@ -4,10 +4,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TARge20.Core.Domain
 {
-    class SalesContract
+    public class SalesContract
     {
         [Key]
         public Guid Id { get; set; }
+        public ICollection<Employee> EmployeeId { get; set; }
+        public ICollection<Check> CheckId { get; set; }
         public DateTime Begins { get; set; }
         public DateTime Ends { get; set; }
         public int Quantity { get; set; }
